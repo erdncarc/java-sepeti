@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="javasepeti">JavaSepeti</string>
+
+
+    <string name="title">Signup</string>
+
+
+    <string name="as">as</string>
+    <string name="app_name">JavaSepeti</string>
+    <string name="customer">Customer</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="motorcycle_icon_desc">Motorcycle icon</string>
+    <string name="courier">Courier</string>
+
+    <string name="have_an_acc">Have an Account?</string>
+
+    <string name="login_here">Login here</string>
+    <string name="title2">Signup</string>
+
+    <string name="kcal_a_f_g_">★ 4.9  |  430 kcal  |  A, F, G, L, M</string>
+    <string name="label">Company Name</string>
+
+
+    <string name="title1">Restaurant Information</string>
+    <string name="title3">Add Restaurant Address</string>
+
+    <string name="label2">Open Close Hours</string>
+
+    <string-array name="range_options">
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>15 km</item>
+        <item>20 km</item>
+        <item>25 km</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_anonymous_search_page">AnonymousSearchPage</string>
+    <string name="title_activity_edit_info">EditInfoActivity</string>
+
+
+</resources>

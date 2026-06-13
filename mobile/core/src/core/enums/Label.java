@@ -1,0 +1,7 @@
+package com.example.core.enums;
+
+public enum Label {
+    NONE,
+    VEGAN,
+    VEGETARIAN
+}

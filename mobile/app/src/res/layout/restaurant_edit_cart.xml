@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_card"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="VisualLintBounds">
+
+        <RelativeLayout
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Sol üst köşe: Edit ikonu -->
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="3dp"
+                android:src="@drawable/edit_icon"
+                tools:ignore="ContentDescription" />
+
+            <!-- Sağ üst köşe: Rate kısmı -->
+            <TextView
+                android:id="@+id/food_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/star_rate"
+                android:text="Rate"
+                android:textAppearance="@style/r_black_14"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,UseCompatTextViewDrawableXml" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/food_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/rectangle_gap"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/OvalImageMask"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Food Name"
+            android:textAppearance="@style/r_black_16"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/food_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ "
+                    android:textAppearance="@style/r_black_16"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/food_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textAppearance="@style/r_black_16"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/features"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/food_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="... cal"
+                    android:textAppearance="@style/r_black_12"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/food_allergens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="allergens"
+                    android:textAppearance="@style/r_black_12"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

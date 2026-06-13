@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/rectangle_filter"
+    android:backgroundTint="@color/light_gray"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Sort by:"
+            android:textAppearance="@style/r_green_18"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@drawable/vector_up"
+            android:buttonTint="@color/black_green" />
+
+        <CheckBox
+            android:id="@+id/down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@drawable/vector_down"
+            android:buttonTint="@color/black_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:buttonTint="@color/black_blue"
+            android:text="Rate"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Distance"
+            android:textAppearance="@style/r_black_16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by:"
+        android:textAppearance="@style/r_green_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:buttonTint="@color/black_blue"
+            android:text="Open"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Close"
+            android:textAppearance="@style/r_black_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_fill"
+            android:backgroundTint="@color/green"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Clear"
+            android:textAppearance="@style/r_white_20" />
+
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_fill"
+            android:backgroundTint="@color/green"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Apply"
+            android:textAppearance="@style/r_white_20" />
+    </LinearLayout>
+</LinearLayout>

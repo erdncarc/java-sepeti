@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shown_restaurant_xml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <FrameLayout
+        android:id="@+id/restaurant_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <!-- Sadece resmi gösterecek -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/restaurant_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:contentDescription="@null"
+             />
+
+        <!-- Üstte sabit duran icon -->
+        <ImageView
+            android:id="@+id/camera_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/camera_icon"
+            android:padding="12dp"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/edit_restaurant_background"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_image_container">
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Name"
+            android:textAppearance="@style/r_black_30"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurant_name"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/courier_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="Courier"
+                android:textAppearance="@style/r_black_14"
+                app:drawableStartCompat="@drawable/courier_rate" />
+
+            <TextView
+                android:id="@+id/restaurant_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="5dp"
+                android:text="Restaurant"
+                android:textAppearance="@style/r_black_14"
+                app:drawableStartCompat="@drawable/restaurant_rate" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="5dp"
+                android:text="Rate"
+                android:textAppearance="@style/r_black_14"
+                app:drawableStartCompat="@drawable/star_rate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="open/close time:"
+                android:textAppearance="@style/r_black_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="... - ..."
+                android:textAppearance="@style/r_black_14" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:text="address"
+                android:textAppearance="@style/r_black_14" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_item_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_toStartOf="@id/open_status"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:foregroundGravity="left"
+            android:src="@drawable/plus_icon" />
+
+        <TextView
+            android:id="@+id/open_status"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle_fill"
+            android:backgroundTint="@color/green"
+            android:drawableTint="@color/green"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:text="STATUS"
+            android:textAppearance="@style/r_white_12" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintTop_toBottomOf="@id/id1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <GridLayout
+            android:id="@+id/food_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:padding="15dp" />
+    </ScrollView>
+
+    <include layout="@layout/panel_restaurant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

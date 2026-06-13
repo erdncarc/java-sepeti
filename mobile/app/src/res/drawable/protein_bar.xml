@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="4dp" android:height="36dp" android:drawable="@color/cardview_light_background"/>
+    <item android:top="18dp"> <!-- Doluluk oranı (örnek: yarı dolu) -->
+        <shape android:shape="rectangle">
+            <solid android:color="#0077B6"/> <!-- Mavi -->
+        </shape>
+    </item>
+</layer-list>

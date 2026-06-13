@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/rectangle_filter"
+    android:backgroundTint="@color/light_gray"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Sort by:"
+            android:textAppearance="@style/r_green_18"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@drawable/vector_up"
+            android:buttonTint="@color/black_green" />
+
+        <CheckBox
+            android:id="@+id/down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@drawable/vector_down"
+            android:buttonTint="@color/black_green" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <CheckBox
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Price"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Rate"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Calories"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Protein"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/fats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Fats"
+            android:textAppearance="@style/r_black_16" />
+
+        <CheckBox
+            android:id="@+id/carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black_blue"
+            android:text="Carbs"
+            android:textAppearance="@style/r_black_16" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by:"
+        android:textAppearance="@style/r_green_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text="Calories"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/min_calories"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="min"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/max_calories"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="max"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:text="Proteins"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/min_protein"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="min"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/max_protein"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="max"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="42dp"
+                android:text="Fats"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/min_fat"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="min"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/max_fat"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="max"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Carbs"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/min_carb"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="min"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+
+            <EditText
+                android:id="@+id/max_carb"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_fill"
+                android:backgroundTint="@color/white"
+                android:hint="max"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="@color/black_blue"
+                android:text="Vegan"
+                android:textAppearance="@style/r_black_16" />
+
+            <CheckBox
+                android:id="@+id/vegetarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black_blue"
+                android:text="Vegetarian"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allergens:"
+        android:textAppearance="@style/r_gray_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="14">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/a"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/b"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/c"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/d"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/e"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/f"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/g"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/h"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/l"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/m"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/n"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/o"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/p"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/r"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/black_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R"
+                android:textAppearance="@style/r_black_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_fill"
+            android:backgroundTint="@color/green"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Clear"
+            android:textAppearance="@style/r_white_20" />
+
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_fill"
+            android:backgroundTint="@color/green"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Apply"
+            android:textAppearance="@style/r_white_20" />
+    </LinearLayout>
+</LinearLayout>

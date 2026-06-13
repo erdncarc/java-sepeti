@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Geri butonu -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/arrow_circle_left"
+        android:contentDescription="Back"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!-- Başlık: Signup -->
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/righteous"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Alt başlık: as -->
+    <TextView
+        android:id="@+id/signup_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="as"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/signup_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Alt başlık: Restaurant -->
+    <TextView
+        android:id="@+id/restaurant_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D72F2F"
+        android:fontFamily="@font/righteous"
+        app:layout_constraintTop_toBottomOf="@id/signup_as"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/righteous"
+        android:gravity="center_horizontal|top"
+        android:text="@string/title1"
+        android:textAppearance="@style/title1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/actor"
+        android:gravity="top"
+        android:lineSpacingExtra="-1sp"
+        android:maxLines="1"
+        android:text="@string/label2"
+        android:textAppearance="@style/label2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <LinearLayout
+        android:id="@+id/time_picker_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/open_time"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_input"
+            android:hint="09:00"
+            android:inputType="time"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/time_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/close_time"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_input"
+            android:hint="23:00"
+            android:inputType="time"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Phone Number Label -->
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/time_picker_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp" />
+
+
+    <!-- Phone Input Box (ülke kodu + numara) -->
+    <LinearLayout
+        android:id="@+id/phone_input_container"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text_input"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/phone_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="flag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+90"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginEnd="12dp" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="5393907361"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Full Name Label -->
+    <TextView
+        android:id="@+id/fullname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/phone_input_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Full Name Input -->
+    <EditText
+        android:id="@+id/fullname_input"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Abdullah Berke Yıldız"
+        android:background="@drawable/text_input"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/fullname_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Restaurant Name Label -->
+    <TextView
+        android:id="@+id/restaurant_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Name"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/fullname_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Restaurant Name Input -->
+    <EditText
+        android:id="@+id/restaurant_name_input"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="HU-CS"
+        android:background="@drawable/text_input"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Next Button -->
+    <TextView
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next ➜"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#D72F2F"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_name_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/righteous" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

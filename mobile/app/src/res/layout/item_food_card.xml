@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food1"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/food_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ 4.9"
+            android:textColor="#F7941D"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:padding="4dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lamb Shank"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 15.4"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/food_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="430 cal\nA, F, G, L, M"
+        android:textSize="12sp"
+        android:textColor="#555" />
+</LinearLayout>

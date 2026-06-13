@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/arrow_circle_left"
+            android:contentDescription="Back"
+            android:layout_gravity="start"
+            android:elevation="4dp" />
+
+        <!-- Food image -->
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food1" />
+
+        <!-- Category tag -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/basket_circle_green"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="Meat"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Food name -->
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lamb Shank"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000" />
+
+        <!-- Rating, calories, allergens -->
+
+
+        <!-- Nutrition info -->
+        <TextView
+            android:id="@+id/kcal_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/kcal_a_f_g_"
+            android:textAppearance="@style/kcal_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <!-- Protein Bar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="4dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/protein_bar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="48G - Protein" />
+
+            </LinearLayout>
+
+            <!-- Fats Bar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="4dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/fats_bar"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21G - Fats" />
+            </LinearLayout>
+
+            <!-- Carbs Bar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="4dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/carbs_bar"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="76G - Carbs" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/food_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tender lamb shank braised in a rich tomato-based sauce, served with baby carrots and fresh asparagus. This hearty dish offers a balanced combination of protein and carbohydrates, making it a comforting and nutritious meal."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#333" />
+
+        <!-- Add to Basket Button -->
+        <LinearLayout
+            android:id="@+id/add_to_cart_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/rounded_green_background"
+            android:elevation="4dp">
+
+            <!-- Sepet ikon -->
+
+            <!-- + işareti -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@null"
+                android:src="@drawable/sepet" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/arti"
+                android:contentDescription="@null" />
+
+            <!-- Ortayı boş bırakmak için boşluk -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Fiyat -->
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 15.4"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

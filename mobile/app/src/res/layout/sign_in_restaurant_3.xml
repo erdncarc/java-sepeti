@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Geri butonu -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/arrow_circle_left"
+        android:contentDescription="Back"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!-- Başlık: Signup -->
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/righteous"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Alt başlık: as -->
+    <TextView
+        android:id="@+id/signup_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="as"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/signup_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Alt başlık: Restaurant -->
+    <TextView
+        android:id="@+id/restaurant_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D72F2F"
+        android:fontFamily="@font/righteous"
+        app:layout_constraintTop_toBottomOf="@id/signup_as"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/righteous"
+        android:gravity="center_horizontal|top"
+        android:text="@string/title3"
+        android:textAppearance="@style/title1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_label" />
+
+
+    <ImageView
+        android:id="@+id/map_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/text_input"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+
+    <!-- Address Label -->
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/map_image"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Address Input -->
+    <EditText
+        android:id="@+id/address_input"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Yellow St. Green Apt. No:5"
+        android:background="@drawable/text_input"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/address_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- City + Town -->
+    <LinearLayout
+        android:id="@+id/city_town_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/address_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/city_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Newyork"
+                android:background="@drawable/text_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Space android:layout_width="12dp" android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Town"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/town_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Jersey"
+                android:background="@drawable/text_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Street + Apartment + Number -->
+    <LinearLayout
+        android:id="@+id/street_apartment_number_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/city_town_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Street -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/street_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Yellow"
+                android:background="@drawable/text_input"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+        </LinearLayout>
+
+        <Space android:layout_width="8dp" android:layout_height="match_parent"/>
+
+        <!-- Apartment -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apartment"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/apartment_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Green"
+                android:background="@drawable/text_input"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+        </LinearLayout>
+
+        <Space android:layout_width="8dp" android:layout_height="match_parent"/>
+
+        <!-- Number -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/number_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="9"
+                android:background="@drawable/text_input"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Range Label -->
+    <TextView
+        android:id="@+id/range_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Range"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/street_apartment_number_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/range_spinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/test_input2"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/range_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Next Button -->
+    <TextView
+        android:id="@+id/address_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next ➜"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#D72F2F"
+        android:fontFamily="@font/righteous"
+        app:layout_constraintTop_toBottomOf="@id/range_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

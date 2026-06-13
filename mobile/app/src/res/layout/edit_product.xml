@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Buraya içerik gelecektir -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow_circle_left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <!-- Page Title -->
+            <TextView
+                android:id="@+id/page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Menu Item"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/back_button"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Star Rating -->
+
+            <!-- Food Image -->
+            <TextView
+                android:id="@+id/star_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/star"
+                android:text="4.9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/food_image"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food1"
+                app:layout_constraintTop_toBottomOf="@id/page_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Food Informations Header -->
+            <TextView
+                android:id="@+id/food_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Informations"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/food_image"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp" />
+
+            <!-- Price -->
+            <EditText
+                android:id="@+id/price_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D84343"
+                android:background="@drawable/kirmizigradient"
+                android:hint="$15.29"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:ems="6"
+                app:layout_constraintTop_toTopOf="@id/food_info_title"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Meat & Tag Buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/food_info_title"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp">
+
+            </LinearLayout>
+
+            <!-- Name & Type Inputs -->
+            <!-- ... diğer EditText ve dropdown stilleri buraya eklenebilir ... -->
+
+            <!-- Description EditText -->
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:hint="Description"
+                android:text="Tender lamb shank braised in a rich tomato-based sauce, served with baby carrots and fresh asparagus."
+                android:background="@drawable/text_input"
+                app:layout_constraintTop_toBottomOf="@id/food_info_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp" />
+
+
+            <!-- Nutrition Info -->
+            <!-- Layout içine 3 tane kutu: Protein, Fats, Carbs, kalori bilgisi -->
+
+            <!-- Allergens -->
+            <!-- Yuvarlak seçim kutuları ve harfler için grid layout tercih edilebilir -->
+
+            <!-- Update & Delete Buttons -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000"
+            android:text="Update"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D84343"
+            android:text="Delete"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

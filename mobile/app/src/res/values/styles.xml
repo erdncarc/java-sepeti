@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="r_black_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_black_30">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_black_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_black_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_black_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_black_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_black_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_black_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_black_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="m_black_60">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/marck</item>
+    </style>
+
+    <style name="r_gray_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_gray_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_gray_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_gray_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_gray_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_gray_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_gray_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_gray_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_gray_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_gray_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_gray_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_gray_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_gray_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_gray_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="r_green_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_green_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_green_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_green_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_green_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_green_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_green_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_green_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_green_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_green_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_green_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_green_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_green_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_green_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="r_white_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_white_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_white_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_white_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_white_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_white_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_white_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_white_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_white_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_white_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_white_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_white_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_white_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_white_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="m_white_60">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/marck</item>
+    </style>
+
+    <style name="r_white_45">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_blue_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_blue_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_blue_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_blue_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_blue_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_blue_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_blue_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_blue_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="r_red_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_red_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_red_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_red_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_red_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_red_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_red_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_red_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_red_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_red_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_red_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_red_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_red_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_red_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="r_orange_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="r_orange_30">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/righteous</item>
+    </style>
+
+    <style name="a_orange_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_orange_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_orange_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_orange_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_orange_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_orange_22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="a_orange_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fontFamily">@font/actor</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#191D23</item>
+        <item name="android:fontFamily">@font/righteous</item> <!-- Özel font -->
+        <item name="android:lineHeight">30sp</item> <!-- Line height istenmişti -->
+    </style>
+
+    <style name="as">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/righteous</item> <!-- Özel font -->
+        <item name="android:lineHeight">22sp</item> <!-- Line height -->
+    </style>
+
+    <style name="javasepeti">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">cursive</item> <!-- Alternatif font -->
+    </style>
+    <style name="customer">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/righteous</item> <!-- Fontu bağladım -->
+        <item name="android:lineHeight">30sp</item>
+    </style>
+    <style name="restaurant">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/righteous</item>
+        <item name="android:lineHeight">30sp</item>
+    </style>
+    <style name="courier">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/righteous</item>
+        <item name="android:lineHeight">30sp</item>
+    </style>
+
+    <style name="have_an_acc">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#191D23</item>
+        <item name="android:fontFamily">@font/actor</item>
+        <item name="android:lineHeight">19sp</item>
+    </style>
+
+    <style name="login_here">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#191D23</item>
+        <item name="android:fontFamily">@font/actor</item>
+        <item name="android:lineHeight">19sp</item>
+    </style>
+    <style name="title2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/righteous</item>
+        <item name="android:lineHeight">30sp</item>
+    </style>
+
+
+
+
+    <style name="ratingTag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/rating_tag_bg</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/righteous</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="kcal_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#80000000</item> <!-- %50 opak siyah -->
+        <item name="android:fontFamily">@font/righteous</item> <!-- varsa -->
+    </style>
+    <style name="label">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#BF000000</item> <!-- %75 opacity siyah -->
+    </style>
+
+
+
+    <style name="title1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#191D23</item>
+    </style>
+
+
+    <style name="label2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#BF000000</item> <!-- %75 opak siyah -->
+    </style>
+
+    <style name="CircleImageView" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="OvalImageMask" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item> <!-- İstediğin kadar yuvarlayabilirsin -->
+    </style>
+
+
+</resources>

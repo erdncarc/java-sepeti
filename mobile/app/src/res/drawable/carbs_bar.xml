@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="4dp" android:height="36dp" android:drawable="@color/cardview_light_background"/>
+    <item android:top="10dp"> <!-- Çok dolu -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FDC500"/> <!-- Sarı -->
+        </shape>
+    </item>
+</layer-list>
